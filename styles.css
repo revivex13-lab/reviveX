@@ -1,0 +1,216 @@
+/* =============================
+   ReViveX Global Stylesheet
+   Clean • Academic • Readable
+   ============================= */
+
+/* ---------- Color System ---------- */
+:root {
+  --primary: #1e3a5f;
+  --accent: #2cb1a6;
+  --background: #f8fafc;
+  --text-main: #1f2933;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Base Typography ---------- */
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--background);
+  color: var(--text-main);
+  line-height: 1.75;
+  font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  max-width: 70ch;
+}
+
+/* ---------- Layout Utilities ---------- */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.container.narrow {
+  max-width: 800px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* ---------- Navigation ---------- */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+nav a {
+  margin-left: 1.6rem;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Sections ---------- */
+.overview {
+  padding: 4rem 0;
+}
+
+.highlights {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* ---------- Forms ---------- */
+form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  margin-bottom: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  font-family: "Inter", sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  padding: 3rem 0 1.2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.site-footer a {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+.copyright {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    margin-left: 1rem;
+  }
+}
