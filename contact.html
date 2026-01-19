@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | ReViveX</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">Re<span>Vive</span>X</div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="product.html">System</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="team.html">Team</a>
+          <a href="impact.html">Impact</a>
+          <a href="contact.html" class="btn">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="overview">
+      <div class="container narrow">
+        <h1>Contact ReViveX</h1>
+        <p>
+          If you have questions about the ReViveX project, would like to request
+          a demonstration, or wish to provide feedback, please use the form
+          below. Messages submitted through this page will be sent to the
+          official ReViveX project email.
+        </p>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="container narrow">
+        <form
+          class="card"
+          method="POST"
+          action="https://formsubmit.co/revivex13@gmail.com">
+          <h3>Send Us a Message</h3>
+
+          <!-- FormSubmit configuration -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from ReViveX website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+
+          <p
+            style="
+              margin-top: 1rem;
+              font-size: 0.9rem;
+              color: var(--text-muted);
+            ">
+            Your message will be delivered directly to
+            <strong>revivex13@gmail.com</strong>.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container narrow">
+        <h2>Academic Context</h2>
+        <p>
+          ReViveX was developed as part of the
+          <strong>Software Development Group Project</strong> module under the
+          University of Westminster curriculum. Communication related to this
+          project is intended for academic and demonstration purposes.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Re<span>Vive</span>X</div>
+          <p>
+            An undergraduate project focused on accessible neurorehabilitation.
+          </p>
+        </div>
+
+        <div>
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="product.html">System</a>
+          <a href="team.html">Team</a>
+        </div>
+
+        <div>
+          <h4>Institution</h4>
+          <p>Informatics Institute of Technology<br />Colombo, Sri Lanka</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2025 ReViveX · University of Westminster</div>
+    </footer>
+  </body>
+</html>
